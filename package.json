@@ -1,15 +1,55 @@
 {
-  "name": "manager",
-  "version": "1.0.0",
+  "name": "deploylocally",
+  "version": "0.0.2",
   "description": "Blue-Green deploy CLI with rollback and instant rollback support.",
   "main": "dist/bluegreen.js",
   "bin": {
-    "bluegreen": "dist/bluegreen.js"
+    "deploy": "dist/bluegreen.js"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/bluegreen.js"
   },
-  "author": "Himanshu <your-email@example.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Himasnhu-AT/deploy"
+  },
+  "bugs": {
+    "url": "https://github.com/Himasnhu-AT/deploy/issues",
+    "email": "hyattherate2005@gmail.com"
+  },
+  "homepage": "https://github.com/Himasnhu-AT/deploy#readme",
+  "keywords": [
+    "deploy",
+    "blue-green",
+    "cli",
+    "rollback",
+    "devops",
+    "automation",
+    "nodejs"
+  ],
+  "contributors": [
+    {
+      "name": "Himanshu",
+      "email": "hyattherate2005@gmail.com"
+    }
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Himasnhu-AT"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Himanshu <hyattherate2005@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@types/node": "^24.0.14",
